@@ -3,31 +3,17 @@
   @include align;
 
   .blogContainer {
-    min-height: 120vh;
-    width: 1000px;
+    height: $heightSection;
+    width: $widthSection;
     @include align;
     flex-direction: column;
     justify-content: space-between;
 
-    .blogHeader {
-      @include align;
-
-      h1 {
-        @include textLargeB;
-        font-weight: 400;
-        padding: 30px;
-      }
-
-      p {
-          @include textSmallB;
-        	line-height: $lineNormal;
-      }
-    }
-
     .blogNewsCtn {
       @include align;
       justify-content: space-between;
-      width: 1000px;
+      width: 90%;
+      
       height: 500px;
       flex-direction: row;
       padding-top: 30px;
@@ -37,23 +23,23 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 500px;
-        width: 400px;
+        height: 100%;
+        width: 40%;
 
         .firstImg {
-          height: 300px;
-          width: 400px;
+          height: 60%;
+          width: 100%;
           background-color: $gray;
           transition: .3s;
 
           &:hover {
-            box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);;
-           }
+          box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);
+          }
         }
 
         .firstNews{
-          width: 400px;
-          height: 150px;
+          width: 100%;
+          height: 30%;
           @include align;
           flex-direction: row;
         }
@@ -85,21 +71,33 @@
 
       .newsSecond,
       .newsThird {
-        display: flex;
-        flex-direction: column;
+        @include align;
         justify-content: space-between;
-        align-items: center;
-        width: 250px;
-        height: 500px;
+        width: 25%;
+        height: 100%;
 
         .secondthirdNews {
-          width: 250px;
+          @include align;
+          width: 100%;
           height: 60%;
         }
       }
 
+      .img1 {
+        @include align;
+        height: 30%;
+        width: 100%;
+        background-color: $gray;
+        transition: .3s;
+
+        &:hover {
+          box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);;
+         }
+      }
+
       .img {
-        height: 150px;
+        @include align;
+        height: 50%;
         width: 100%;
         background-color: $gray;
         transition: .3s;
@@ -110,10 +108,12 @@
       }   
 
       .text {
+        @include align; 
         padding: 10px;
-        @include align;
+        font-family: $roboto;
+        font-size: 12px;
         justify-content: center;
-        height: 150px;
+        height: 50%;
         width: 100%;
         text-align: center;
         line-height: $lineNormal;
@@ -126,8 +126,9 @@
 
       .newsH {
         text-align: center;
-        @include textSmallB;
-        font-size: $small+2px;
+        font-size: 12px;
+        font-family: $roboto;
+        font-size: $small+1px;
         font-weight:550; 
         line-height: 30px; 
       }

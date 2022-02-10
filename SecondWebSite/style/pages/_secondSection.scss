@@ -3,8 +3,8 @@
   @include align;
 
   .welcomeContainer {
-    width: 1300px;
-    min-height: 100vh;
+    width: $widthSection;
+    min-height: $heightSection;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -78,14 +78,6 @@
         }
         
       }
-    }
-    .welcomeBtnContainer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100px;
-      height: 30px;
-      padding-top: 20px 0px 20px;      
     }
   }
 }

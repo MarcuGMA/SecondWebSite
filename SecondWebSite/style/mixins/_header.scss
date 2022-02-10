@@ -1,0 +1,25 @@
+@mixin headerMenu {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  font-size: 14px;
+  color:$white;
+}
+
+@mixin allHeaders {
+  h1 {
+  @include align;
+  font-family: $roboto;
+  font-size: $large+1px;
+  font-weight: 400;
+  padding: 30px;
+  }
+
+  p {
+    @include textSmallB;
+    @include align;
+    padding-bottom: 30px;
+  }
+}

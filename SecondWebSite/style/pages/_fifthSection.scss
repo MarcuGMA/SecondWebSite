@@ -1,0 +1,48 @@
+.feedback {
+  @include align;
+  background-color: white;
+
+  .feedbackContainer {
+    @include align;
+    height: $heightSection;
+    width: $heightSection;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    .feedbackClient {
+      @include align;
+      height: 200px;
+      width: 80%;
+      justify-content: space-around;
+      flex-direction: row;
+      transition: .4s;
+
+      &:hover {
+        box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);
+      }
+
+      .clientImg {
+        height: 170px;
+        width: 170px;
+        background-color: $gray;
+        border-radius: 5%;
+        padding-left: 15px;
+      }
+
+      .clientOpinion {
+        @include textSmallB;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width:65%;
+        height: 100%;
+        line-height: 25px;
+
+        span {
+          font-weight: 600;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

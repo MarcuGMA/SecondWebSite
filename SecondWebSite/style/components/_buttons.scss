@@ -49,37 +49,44 @@
     cursor: pointer;
   }
 }
-  
-//section2
 
-.welcomeBtn {
+.BtnContainerCircle {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  border: 1px solid #b2b2b2;
-  border-radius: 50%;
-  background-color: transparent;
-  transition: .3s;
-  &:hover {
-    display: inline-flex;
-    width: 28px;
-    height: 28px;
-    border: 1px solid $yellow;
-  }
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  height: 30px;
+  padding-top: 20px 0px 20px;      
 
-  .welcomeBtnC {
-    width: 15px;
-    height: 15px;
-    background-color: #b2b2b2;
+  .circleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #b2b2b2;
     border-radius: 50%;
+    background-color: transparent;
     transition: .3s;
-  }
-  
-  &:hover .welcomeBtnC{
-    width: 18px;
-    height: 18px;
-    background-color: $yellow;
+    &:hover {
+      display: inline-flex;
+      width: 28px;
+      height: 28px;
+      border: 1px solid $yellow;
+    }
+
+    .circleBtnC {
+      width: 15px;
+      height: 15px;
+      background-color: #b2b2b2;
+      border-radius: 50%;
+      transition: .3s;
+    }
+    
+    &:hover .circleBtnC{
+      width: 18px;
+      height: 18px;
+      background-color: $yellow;
+    }
   }
 }

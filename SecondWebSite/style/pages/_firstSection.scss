@@ -8,8 +8,8 @@
   align-items: center;
 
   .headerContainer {
-    width: 1300px;
-    min-height: 100vh;
+    width: $widthSection;
+    min-height: $heightSection;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
