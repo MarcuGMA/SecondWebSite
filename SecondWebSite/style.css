@@ -34,6 +34,19 @@
   color: #fbad27;
 }
 
+.donationYellowBtn {
+  border: 1px solid white;
+}
+
+.donationYellowBtn:hover {
+  border: 1px solid white;
+  background-color: white;
+}
+
+.donationYellowBtn:hover .donationTextBtn {
+  color: #fbad27;
+}
+
 .headerBtnBottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,8 +405,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 225px;
-  width: 70%;
+  height: 250px;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -443,8 +456,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: auto;
-  width: 70%;
+  height: 250px;
+  width: 100%;
 }
 
 .welcome .welcomeContainer .welcomeBenefits .benefits {
@@ -617,6 +630,7 @@
   height: 8px;
   -webkit-transition: .3s;
   transition: .3s;
+  cursor: pointer;
 }
 
 .destination .destinationContainer .destinationCountry .countryArrow .arrow::before {
@@ -1079,5 +1093,154 @@
 .feedback .feedbackContainer .feedbackClient .clientOpinion span {
   font-weight: 600;
   color: #fbad27;
+}
+
+.discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fbad27;
+}
+
+.discount .discountContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  height: 250px;
+  width: 70%;
+}
+
+.discount .discountContainer p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 36px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  height: 400px;
+}
+
+.footer .footerContainer .footerContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
+  height: 250px;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.footer .footerContainer .footerContact .contact {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  width: 15%;
+}
+
+.footer .footerContainer .footerContact .contact h1 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
+  text-align: start;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer .footerContainer .footerContact .contact h1:hover {
+  opacity: .8;
+}
+
+.footer .footerContainer .footerContact .contact p {
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.footer .footerContainer .footerContact .contact .socialSites {
+  padding-top: 10px;
+}
+
+.footer .footerContainer .footerContact .contact .socialSites img {
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.footer .footerContainer .footerContact .contact .socialSites img:hover {
+  opacity: .8;
+}
+
+.footer .footerContainer .copywrite {
+  padding-top: 30px;
+}
+
+.footer .footerContainer .copywrite p {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+.footer {
+  @include align;
+  background-color: $white;
+
+  .footerContainer {
+    @include align;
+    justify-content: center;
+    width: $widthSection;
+    height: 400px;
+
+    .footerContact {
+      @include align;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      height: 250px;
+      border-bottom: 1px solid $gray;
+
+      .contact {
+        justify-content: center;
+        height: 100px;
+        width: 15%;
+
+        h1 {
+          @include textSmallB;
+          text-align: start; 
+          font-weight: 600; 
+          cursor: pointer;
+          transition: .3s;
+
+          &:hover {
+            opacity: .8;
+          }
+        }
+
+        p {
+          padding-top: 10px; 
+          @include textSmallB;
+          line-height: 25px;
+          cursor: pointer;
+        }
+
+        .socialSites {
+          padding-top: 10px;
+
+          img {
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+            opacity: .8;
+           }
+          }
+        }
+      }
+    }
+    .copywrite {
+      padding-top: 30px;
+
+      p {
+        @include textSmallB;
+      }
+    }
+  }
+}

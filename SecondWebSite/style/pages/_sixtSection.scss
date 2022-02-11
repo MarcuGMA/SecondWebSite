@@ -1,0 +1,16 @@
+.discount {
+  @include align;
+  background-color: $yellow;
+
+  .discountContainer {
+    @include align;
+    justify-content: space-between;
+    flex-direction:  row;
+    height: 250px;
+    width: $widthSection; 
+
+    p {
+      @include textLarge;
+    }
+  }
+}

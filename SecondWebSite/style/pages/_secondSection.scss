@@ -12,8 +12,8 @@
 
     .welcomeTopText {
       display: flex;
-      height: 225px;
-      width: 70%;
+      height: 250px;
+      width: 100%;
       justify-content: center;
       flex-direction: column;
       transition: .4s;
@@ -41,8 +41,8 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      height: auto;
-      width: 70%;
+      height: 250px;
+      width: 100%;
 
       .benefits {
         height: 100%;
