@@ -1,0 +1,33 @@
+@media only screen and (max-width: 800px) {
+  .header {
+    .headerContainer {
+      width: 100%;
+      
+      .headerMenu {
+        @include align;
+        flex-direction: column;
+
+        .listElements {
+          @include textNormal;
+          font-size: $normal;
+          padding-top: 15px;
+        }
+
+        .hostline {
+          height: 50px;
+          font-size: $normal;
+        }
+      }
+
+      .headerCenter {
+        .headerContainerText {
+          width: 70%;
+        }
+      }
+
+      .headerBtnContainer {
+        justify-content: center;
+      }
+    }
+  }
+}

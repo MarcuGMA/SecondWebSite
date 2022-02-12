@@ -1,14 +1,14 @@
 .destination {
-  background-color: $white;
   @include align;
+  background-color: $white;
 
   .destinationContainer {
     @include align;
+    @include textSmallB; 
     flex-direction: column;
     justify-content: space-between;
     min-height: $heightSection;
-    width: $widthSection;
-    @include textSmallB; 
+    width: $widthSection; 
 
     .destinationSearch {
       display: flex;
@@ -36,8 +36,8 @@
           margin: auto;
         }   
       }
+
       form {
-      
         .destinationInput {
           width: 70px;
           height: 100%;
@@ -51,6 +51,7 @@
         }
       }
     }
+
     .destinationCountry {
       display: flex;
       flex-direction: row;
@@ -80,7 +81,6 @@
               border-bottom: 2px solid $gray;
               transform: rotate(45deg);
             }
-
             
             &:hover::before {
               border-left: 2px solid $yellow;
@@ -100,6 +100,7 @@
               background-color: $yellow;
             }
           }
+
           .second {
             &::after {
             transform: rotate(180deg);

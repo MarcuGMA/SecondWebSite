@@ -1,14 +1,12 @@
 .welcome {
-  background-color: $white;
   @include align;
+  background-color: $white;
 
   .welcomeContainer {
+    @include align;
     width: $widthSection;
     min-height: $heightSection;
-    display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
 
     .welcomeTopText {
       display: flex;
@@ -23,8 +21,8 @@
       }
 
       .welcomeHeader {
-        display: flex ;
         @include textLargeB;
+        display: flex ;
         justify-content: center;
         padding: 30px;
         font-weight: 400;
@@ -45,13 +43,13 @@
       width: 100%;
 
       .benefits {
+        @include textSmallB; 
         height: 100%;
         width: 30%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        @include textSmallB; 
         transition: .3s;
         
         &:hover {
@@ -76,7 +74,6 @@
         img,h1,p {
           padding-left: 50px;
         }
-        
       }
     }
   }

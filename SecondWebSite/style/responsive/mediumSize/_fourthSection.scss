@@ -1,0 +1,32 @@
+@media only screen and (max-width: 900px) {
+  .blog {
+    .blogContainer {
+      width: 100%;
+      height: $heightSection+400px;
+
+      .blogNewsCtn {
+        flex-wrap: wrap;
+        height: 900px;
+
+        .newsFirst{
+          height: 50%;
+          width: 100%;
+
+          .textFirst {
+            font-size: 10px;
+            font-size: 12px;
+          }
+        }
+
+         .newsSecond,.newsThird {
+            height: 45%;
+            width: 45%;
+
+          .text {
+            padding: 0px;
+          }
+        }
+      }
+    }
+  }
+}

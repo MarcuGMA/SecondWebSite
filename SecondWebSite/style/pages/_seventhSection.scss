@@ -34,8 +34,8 @@
         }
 
         p {
-          padding-top: 10px; 
           @include textSmallB;
+          padding-top: 10px; 
           line-height: 25px;
           cursor: pointer;
         }

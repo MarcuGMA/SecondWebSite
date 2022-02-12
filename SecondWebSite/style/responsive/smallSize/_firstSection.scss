@@ -1,0 +1,53 @@
+@media only screen and (max-width: 600px) {
+  .header {
+    .headerContainer {
+      height: $heightSection+100px;
+      width: 100%;
+
+      .headerMenu {
+        @include align;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+
+        .headerList {
+          @include align;
+          height: 330px;
+          flex-direction: column;
+
+          ul {
+            flex-direction: column;
+
+            .listElements {
+              @include textNormal;
+              font-size: $normal+5px;
+              padding-top: 15px;
+            }
+          }
+        }
+
+        .hostline {
+          height: 50px;
+          font-size: $normal+5px;
+        }
+      }
+
+      .headerCenter {
+        height: 150px;
+
+        .headerContainerText {
+          height: 150px;
+          width: 70%;
+          justify-content: space-between;
+
+          .headerH1 {
+            font-size: $normal+25px;
+          }
+        }
+      }
+      .headerBtnContainer {
+        justify-content: center;
+      }
+    }
+  }
+}

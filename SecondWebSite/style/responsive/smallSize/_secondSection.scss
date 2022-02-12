@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+
+  .welcome {
+    .welcomeContainer {
+      width: 100%;
+      height: $heightSection+200px;
+
+      .welcomeTopText {
+        height: 400px;
+
+        .welcomeHeaderText {
+          padding: 10px;
+        }
+      }
+
+      .welcomeBenefits {
+        @include align;
+        justify-content: center;
+        height: 800px;
+        flex-direction: column;
+
+        .benefits {
+          @include align;
+          height: 30%;
+          width: 80%;
+
+          p {
+            text-align: center;
+          }
+
+          h1{
+            padding: 15px;
+          }
+
+          img{
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+
+}
