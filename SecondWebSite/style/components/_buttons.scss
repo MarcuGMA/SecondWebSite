@@ -81,10 +81,10 @@
     border-radius: 50%;
     background-color: transparent;
     transition: .3s;
+
     &:hover {
       display: inline-flex;
-      width: 28px;
-      height: 28px;
+      transform: scale(1.3);
       border: 1px solid $yellow;
     }
 
@@ -97,8 +97,7 @@
     }
     
     &:hover .circleBtnC{
-      width: 18px;
-      height: 18px;
+      transform: scale(1.1);
       background-color: $yellow;
     }
   }
